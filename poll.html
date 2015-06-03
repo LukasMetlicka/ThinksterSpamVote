@@ -1,0 +1,26 @@
+<html>
+	
+	<head>
+		<script src="angular.js"></script>
+		<script src="poll.js"></script>
+		<link rel="stylesheet" type="text/css" href="poll.css">
+		<title>spamVote</title>
+		
+	</head>
+		<body ng-app="poll" ng-controller="pollController">
+		
+		<h1  id="titleText">{{poll.title}}</h1>
+			
+		<div id="redButton" ng-click="addRedVotes()" class="noselect">
+			<h3>{{poll.redVotes}}</h3>
+		</div>
+		
+		<div id="blueButton" ng-click="addBlueVotes()" class="noselect">
+			<h3>{{poll.blueVotes}}</h3>
+		</div>
+			
+			
+			
+		</body>
+	
+</html>
