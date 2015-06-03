@@ -36,7 +36,7 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06382979">
+            <state vertical-scroll-proportion="-0.021276595">
               <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
@@ -375,7 +375,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433371369391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed CSS issues on poll page.  integrated poll page as template in index.ejs">
+      <created>1433371601803</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1433371601803</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -416,7 +422,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sucessfully moved to a Node.js workspace" />
     <MESSAGE value="Fixed Polls page to reflect dynamic content.  css integration is still needed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Polls page to reflect dynamic content.  css integration is still needed." />
+    <MESSAGE value="Fixed CSS issues on poll page.  integrated poll page as template in index.ejs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed CSS issues on poll page.  integrated poll page as template in index.ejs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -489,7 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06382979">
+        <state vertical-scroll-proportion="-0.021276595">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding />
         </state>
