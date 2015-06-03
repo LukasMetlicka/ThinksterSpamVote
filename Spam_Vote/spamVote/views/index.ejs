@@ -1,0 +1,46 @@
+<html>
+	<!--python -m SimpleHTTPServer 8000-->
+	<head>
+        <!--External Libraries-->
+		<script src="/javascripts/angular.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!--Custom Javascript Imports-->
+        <script src="/javascripts/index.js"></script>
+        <script src="/javascripts/poll.js"></script>
+
+        <!--Custom Stylesheet Imports-->
+		<link type="text/css" rel="stylesheet" href="/stylesheets/index.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/poll.css">
+	</head>
+<body ng-app="showPolls" ng-controller="showPollController">
+
+        <ui-view></ui-view>
+
+        <script type="text/ng-template" id="/showPolls.html">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true" id="newPoll" ng-click="addNewPoll()"></span>
+            <div id="poll" ng-repeat="poll in AllPolls" class="noselect">
+                <a id="poll_link" href="#/poll/{{$index}}">
+                    <h1>{{poll.title}}</h1>
+                    <div id="votes">
+                        <div id="redBox">{{poll.redVotes}}</div>
+                        <div id="blueBox">{{poll.blueVotes}}</div>
+                    </div>
+                </a>
+            </div>
+        </script>
+
+        <script type="text/ng-template" id="poll.html">
+            <h1  id="titleText">{{poll.title}}</h1>
+
+            <div id="redButton" ng-click="addRedVotes()" class="noselect">
+                <h3>{{poll.redVotes}}</h3>
+            </div>
+
+            <div id="blueButton" ng-click="addBlueVotes()" class="noselect">
+                <h3>{{poll.blueVotes}}</h3>
+            </div>
+        </script>
+	</body>
+</html>

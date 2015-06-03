@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df918662-793f-4387-92b0-82128d8e730b" name="Default" comment="">
+    <list default="true" id="df918662-793f-4387-92b0-82128d8e730b" name="Default" comment="Fixed CSS issues on poll page.  integrated poll page as template in index.ejs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Thinkster Practice App.iws" />
@@ -381,7 +381,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433371601803</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed CSS issues on poll page.  integrated poll page as template in index.ejs">
+      <created>1433371659800</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1433371659800</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">

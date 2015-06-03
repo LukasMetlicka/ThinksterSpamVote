@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src="../public/javascripts/angular.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+		<script src="../public/javascripts/makePoll.js"></script>
+		<link type="text/css" rel="stylesheet" href="../public/stylesheets/makePoll.css">
+	</head>
+	
+	<body ng-app="makePoll" ng-controller="makePollController">
+		<form ng-submit="createNewPoll()">
+		<input   id="titleText" ng-model="newPoll.titleText" type="text" value="Title">
+			
+		<div id="redButton" class="noselect">
+			<input ng-model="newPoll.redButtonText" type="text" value="Red title">
+		</div>
+		
+		<div id="blueButton" class="noselect">
+			<input ng-model="newPoll.blueButtonText" type="text" value="Blue Value">
+		</div>
+		<input type="button" ng-click="createNewPoll()">
+		</form>
+		
+	</body>
+	
+</html>
