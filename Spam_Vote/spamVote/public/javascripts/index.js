@@ -14,7 +14,7 @@ app.config([
 		$stateProvider
 			.state("poll", {
 				url: "/poll/{id}",
-				templateUrl: "../../views/poll.html",
+				templateUrl: "poll.html",
                 controller: "pollController"
 			})
 			$urlRouterProvider.otherwise("showPolls");
