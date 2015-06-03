@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df918662-793f-4387-92b0-82128d8e730b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Spam_Vote/spamVote/views/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Spam_Vote/spamVote/views/makePoll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Spam_Vote/spamVote/views/poll.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/angular.js" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/angular.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/makePoll.css" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/makePoll.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/makePoll.js" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/makePoll.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/poll.css" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/poll.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/poll.js" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/poll.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Thinkster Practice App.iws" />
@@ -46,8 +36,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59574467">
-              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.06382979">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -57,7 +47,17 @@
         <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="poll.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/poll.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="5" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -83,16 +83,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="poll.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/poll.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -113,6 +103,7 @@
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/index.html" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/poll.html" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/makePoll.html" />
+        <option value="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/poll.ejs" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs" />
       </list>
@@ -372,12 +363,26 @@
       <option name="number" value="Default" />
       <updated>1432836796585</updated>
     </task>
+    <task id="LOCAL-00001" summary="Sucessfully moved to a Node.js workspace">
+      <created>1433370953590</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1433370953590</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed Polls page to reflect dynamic content.  css integration is still needed.">
+      <created>1433371369391</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1433371369391</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -408,6 +413,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sucessfully moved to a Node.js workspace" />
+    <MESSAGE value="Fixed Polls page to reflect dynamic content.  css integration is still needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Polls page to reflect dynamic content.  css integration is still needed." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -429,26 +439,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -469,18 +463,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/poll.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="5" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59574467">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.06382979">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding />
         </state>
       </provider>
