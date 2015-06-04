@@ -6,7 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/spamVote");
+require("./models/Polls");
+mongoose.connect("mongodb://localhost/showPolls");
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
