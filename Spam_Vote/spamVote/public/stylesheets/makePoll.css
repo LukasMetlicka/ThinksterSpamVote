@@ -1,0 +1,46 @@
+form {
+    width: 100%;
+    background-color: white;
+}
+input {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 0;
+    height: 12%;
+    font-size: x-large;
+
+}
+button {
+    background-color: #2ecc71;
+    font-weight: bold;
+    color: white;
+    border: none;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    height: 15%;
+    font-size: xx-large;
+}
+#wrapper {
+    margin-top: 10%;
+    box-shadow: 5px 5px 20px #888888;
+}
+#makeNewPoll_span {
+    margin-top: 1%;
+    float: left;
+    width: 100%;
+}
+form {
+    padding: 1% 0 1% 0;
+    margin-bottom: 0;
+}
+#wrapper {
+    float: left;
+    margin-top: 1%;
+    width: 100%;
+}
+#closeButton {
+    float: right;
+    margin-right: 1%;
+    font-size: xx-large;
+}

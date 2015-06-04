@@ -9,17 +9,19 @@
         <!--Custom Javascript Imports-->
         <script src="/javascripts/index.js"></script>
         <script src="/javascripts/poll.js"></script>
+        <script src="/javascripts/makePoll.js"></script>
 
         <!--Custom Stylesheet Imports-->
 		<link type="text/css" rel="stylesheet" href="/stylesheets/index.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/poll.css">
+        <link type="text/css" rel="stylesheet" href="/stylesheets/poll.css">
+        <link type="text/css" rel="stylesheet" href="/stylesheets/makePoll.css">
 	</head>
 <body ng-app="showPolls" ng-controller="showPollController">
 
         <ui-view></ui-view>
 
         <script type="text/ng-template" id="/showPolls.html">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true" id="newPoll" ng-click="addNewPoll()"></span>
+            <span class="glyphicon glyphicon-plus" aria-hidden="true" id="newPoll" ng-click="openNewPollPage()"></span>
             <div id="poll" ng-repeat="poll in AllPolls" class="noselect">
                 <a id="poll_link" href="#/poll/{{$index}}">
                     <h1>{{poll.title}}</h1>
@@ -29,6 +31,15 @@
                     </div>
                 </a>
             </div>
+            <span ng-show="makeNew" ng-hide="!makeNew">
+                <span id="wrapper">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true" id="closeButton" ng-click="closeNewPollPage()"></span>
+                    <form ng-submit="makeNewPoll()">
+                        <input type="text" id="title" ng-model="title">
+                        <button type="submit">Make a Poll!</button>
+                    </form>
+                </span>
+            </span>
         </script>
 
         <script type="text/ng-template" id="poll.html">
@@ -42,5 +53,6 @@
                 <h3>{{poll.blueVotes}}</h3>
             </div>
         </script>
+
 	</body>
 </html>

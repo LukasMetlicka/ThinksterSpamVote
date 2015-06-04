@@ -41,8 +41,13 @@ app.controller("showPollController", ["$scope", "polls", "$stateParams",
         $scope.poll = polls[$stateParams.id];
         $scope.AllPolls = polls;
 
-        $scope.addNewPoll = function(){
-            //Redirect to new Polls page
+        $scope.openNewPollPage = function(){
+            $scope.makeNew = true;
+        }
+
+        $scope.closeNewPollPage = function () {
+            $scope.makeNew = false;
+            console.log("ran!");
         }
 
     }]);
@@ -63,3 +68,13 @@ app.controller('pollController',[
 
 
     }]);
+
+app.controller("makePollController", ["$scope", function($scope){
+
+    $scope.makeNewPoll = function(){
+        $scope.makeNew = false;
+    };
+
+
+
+}]);
