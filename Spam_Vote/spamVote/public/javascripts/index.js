@@ -9,7 +9,12 @@ app.config([
 			.state("showPolls", {
 				url: "/showPolls",
 				templateUrl: "/showPolls.html",
-				controller: "showPollController"
+				controller: "showPollController",
+                resolve: {
+                    pollPromise: ['polls', function(polls){
+                        return polls.getAll();
+                    }]
+                }
 			});
 		$stateProvider
 			.state("poll", {
@@ -21,17 +26,13 @@ app.config([
 		
     }]);
 
-app.factory("polls", [function() {
-    var o = [
-
-        {title: "Mac vs. PC", redVotes: 10, blueVotes: 15},
-        {title: "Linux vs. PC", redVotes: 11, blueVotes: 14},
-        {title: "Peter vs. Max", redVotes: 9, blueVotes: 16},
-        {title: "iPad vs. iPhone", redVotes: 34, blueVotes: 6},
-        {title: "Gus vs. Cole", redVotes: 7, blueVotes: 7}
-
-    ];
-
+app.factory("polls", ['$http',function($http) {
+    var o = [];
+    o.getAll = function(){
+        return $http.get('/showPolls').success(function(data){
+            angular.copy(data, o);
+        });
+    };
     return o;
 }])
 
