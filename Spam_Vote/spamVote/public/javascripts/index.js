@@ -33,6 +33,13 @@ app.factory("polls", ['$http',function($http) {
             angular.copy(data, o);
         });
     };
+
+    o.create = function(poll){
+        return $http.post('/showPolls', poll).success(function(data){
+            o.push(data);
+        })
+    };
+
     return o;
 }])
 
@@ -44,12 +51,17 @@ app.controller("showPollController", ["$scope", "polls", "$stateParams",
 
         $scope.openNewPollPage = function(){
             $scope.makeNew = true;
-        }
+        };
 
         $scope.closeNewPollPage = function () {
             $scope.makeNew = false;
-            console.log("ran!");
-        }
+        };
+        $scope.makeNewPoll = function(){
+            polls.create({
+                title: $scope.title
+            });
+            $scope.makeNew = false;
+        };
 
     }]);
 
@@ -70,12 +82,15 @@ app.controller('pollController',[
 
     }]);
 
-app.controller("makePollController", ["$scope", function($scope){
+/*app.controller("makePollController", ["$scope","polls", function($scope, polls){
 
     $scope.makeNewPoll = function(){
+        polls.create({
+            title: $scope.title
+        });
         $scope.makeNew = false;
     };
 
 
 
-}]);
+}]); */
