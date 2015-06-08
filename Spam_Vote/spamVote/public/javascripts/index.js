@@ -20,8 +20,13 @@ app.config([
 			.state("poll", {
 				url: "/poll/{id}",
 				templateUrl: "poll.html",
-                controller: "pollController"
-			})
+                controller: "pollController",
+                resolve: {
+                    poll: ['$stateParams', 'polls', function($stateParams, polls){
+                        return polls.get($stateParams.id);
+                    }]
+                }
+			});
 			$urlRouterProvider.otherwise("showPolls");
 		
     }]);
@@ -34,14 +39,34 @@ app.factory("polls", ['$http',function($http) {
         });
     };
 
+    o.get = function(id){
+      return $http.get('/poll/' + id).then(function(res){
+          return res.data;
+      })
+    };
+
     o.create = function(poll){
         return $http.post('/showPolls', poll).success(function(data){
             o.push(data);
         })
     };
 
+    o.redUpvote = function(poll, pollID){
+        return $http.put('/poll/' + pollID + '/redUpvote',poll)
+            .success(function(data){
+                poll.redVotes += 1;
+            });
+    };
+
+    o.blueUpvote = function(poll, pollID){
+        return $http.put('/poll/' + pollID + '/blueUpvote',poll)
+            .success(function(data){
+                poll.blueVotes += 1;
+            });
+    };
+
     return o;
-}])
+}]);
 
 app.controller("showPollController", ["$scope", "polls", "$stateParams",
 	function($scope, polls, $stateParams){
@@ -66,18 +91,17 @@ app.controller("showPollController", ["$scope", "polls", "$stateParams",
     }]);
 
 app.controller('pollController',[
-    '$scope',"polls","$stateParams",
-    function($scope, polls, $stateParams){
+    '$scope',"polls","$stateParams", "poll",
+    function($scope, polls, $stateParams, poll){
 
-        $scope.poll = polls[$stateParams.id];
-
+        $scope.poll = poll;
+        var pollID = poll._id;
         $scope.addRedVotes = function(){
-            polls[$stateParams.id].redVotes++;
+            polls.redUpvote(poll, pollID);
         };
         $scope.addBlueVotes = function(){
-            polls[$stateParams.id].blueVotes++;
+            polls.blueUpvote(poll, pollID)
         };
-
 
 
     }]);

@@ -55,6 +55,6 @@ router.put('/poll/:poll/blueUpvote', function(req, res, next){
 });
 
 //Tester
-router.get('/showPolls/:poll', function(req, res){
+router.get('/poll/:poll', function(req, res){
     res.json(req.poll);
 });
