@@ -47,3 +47,11 @@ body {
     margin-left: 1%;
     margin-top: 0.5%;
 }
+#ellipses {
+    float: right;
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+    width: auto;
+    padding: 1%;
+}

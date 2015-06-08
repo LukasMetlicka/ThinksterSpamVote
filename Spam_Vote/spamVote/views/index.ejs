@@ -24,11 +24,12 @@
             <span class="glyphicon glyphicon-plus" aria-hidden="true" id="newPoll" ng-click="openNewPollPage()"></span>
             <div id="poll" ng-repeat="poll in AllPolls" class="noselect">
                 <a id="poll_link" href="#/poll/{{poll._id}}">
-                    <h1>{{poll.title}}</h1>
+                    <h1>{{poll.title.substring(0,12)}}</h1>
                     <div id="votes">
                         <div id="redBox">{{poll.redVotes}}</div>
                         <div id="blueBox">{{poll.blueVotes}}</div>
                     </div>
+                    <div ng-show="poll.title.length > 12" id="ellipses">...</div>
                 </a>
             </div>
             <span ng-show="makeNew" ng-hide="!makeNew">

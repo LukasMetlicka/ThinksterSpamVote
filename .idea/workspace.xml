@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df918662-793f-4387-92b0-82128d8e730b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/LukasMetlicka.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spam_Vote/spamVote/routes/index.js" afterPath="$PROJECT_DIR$/Spam_Vote/spamVote/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Thinkster Practice App.iws" />
@@ -27,21 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.625">
-              <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.44680852">
+              <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6995884">
-              <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,12 +99,12 @@
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/poll.ejs" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/models/polls.js" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/app.js" />
-        <option value="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/makePoll.css" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/models/Polls.js" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/routes/index.js" />
-        <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs" />
+        <option value="$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css" />
         <option value="$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js" />
+        <option value="$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs" />
       </list>
     </option>
   </component>
@@ -540,14 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.962963">
@@ -572,14 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.625">
-          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -588,10 +581,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/stylesheets/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/public/javascripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6995884">
-          <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spam_Vote/spamVote/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44680852">
+          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
           <folding />
         </state>
       </provider>

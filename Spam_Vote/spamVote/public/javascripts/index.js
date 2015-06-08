@@ -74,6 +74,8 @@ app.controller("showPollController", ["$scope", "polls", "$stateParams",
         $scope.poll = polls[$stateParams.id];
         $scope.AllPolls = polls;
 
+
+
         $scope.openNewPollPage = function(){
             $scope.makeNew = true;
         };
@@ -88,6 +90,7 @@ app.controller("showPollController", ["$scope", "polls", "$stateParams",
             $scope.makeNew = false;
         };
 
+
     }]);
 
 app.controller('pollController',[
@@ -96,6 +99,7 @@ app.controller('pollController',[
 
         $scope.poll = poll;
         var pollID = poll._id;
+
         $scope.addRedVotes = function(){
             polls.redUpvote(poll, pollID);
         };
