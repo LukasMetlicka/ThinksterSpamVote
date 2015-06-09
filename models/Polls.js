@@ -17,5 +17,8 @@ PollsSchema.methods.blueUpvote = function(cb){
     this.blueVotes++;
     this.save(cb);
 };
-
+PollsSchema.methods.delete = function(cb){
+  this.remove();
+    this.save(cb);
+};
 mongoose.model("Poll", PollsSchema);

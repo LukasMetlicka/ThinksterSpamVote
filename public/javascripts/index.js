@@ -65,6 +65,10 @@ app.factory("polls", ['$http',function($http) {
             });
     };
 
+    o.delete = function(poll){
+      polls[polls.indexOf(poll)].remove();
+    };
+
     return o;
 }]);
 
@@ -98,13 +102,13 @@ app.controller('pollController',[
     function($scope, polls, $stateParams, poll){
 
         $scope.poll = poll;
-        var pollID = poll._id;
+        $scope.pollID = poll._id;
 
         $scope.addRedVotes = function(){
-            polls.redUpvote(poll, pollID);
+            polls.redUpvote(poll, $scope.pollID);
         };
         $scope.addBlueVotes = function(){
-            polls.blueUpvote(poll, pollID)
+            polls.blueUpvote(poll, $scope.pollID)
         };
 
 

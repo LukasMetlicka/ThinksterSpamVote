@@ -54,6 +54,15 @@ router.put('/poll/:poll/blueUpvote', function(req, res, next){
     });
 });
 
+router.post("/poll/:poll/delete", function(req, res, next){
+
+    res.json(req.pollID);
+       //.remove().success(function(err, req){
+       //if(err){ return next(err); }
+       //res.redirect("/showPolls");
+   //});
+});
+
 //Tester
 router.get('/poll/:poll', function(req, res){
     res.json(req.poll);
